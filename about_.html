@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .fade-in-out {
+
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            animation: fadeInOut 3s infinite;
+        }
+
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 2;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #29e22f;
+            color: rgb(136, 2, 2);
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 10px;
+
+        }
+
+        .button:hover {
+            background-color: #e80f2c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fade-in-out"></div>
+    <button> <a href="idex.html" class="button">3</a></button>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: auto;
+        }
+
+        .animated-element {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -125px 0 0 -125px;
+            animation-name: colorChange;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #29e22f;
+            color: rgb(136, 2, 2);
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .button:hover {
+            background-color: #e80f2c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="animated-element"></div>
+        <button> <a href="about.html" class="button">1</a></button>
+
+    </div>
+
+</body>
+
+</html>

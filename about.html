@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      animation: resize 3s linear;
+    }
+    
+    @keyframes resize {
+      0% {
+        width: 100px;
+        height: 100px;
+      }
+      100% {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .button {
+        display: inline-block;
+            padding: 10px 20px;
+            background-color: #29e22f;
+            color: rgb(136, 2, 2);
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 10px;;
+  }
+  
+  .button:hover {
+    background-color: #e80f2c;
+  }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <button> <a href="about_.html" class="button">2</a></button>
+
+</body>
+</html>
